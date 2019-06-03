@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>shopping.card</title>
+  <link href="./css/burger.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+  <div class="container text">
+
+    <div class="column column--center is-expanded">
+      <h1> All Products </h1>
+
+
+      <div class="item">
+        <ul class="items">
+          <li>
+            <h2>Nikon D3100</h2>
+        <img class="image" src="./img/camera.png" alt="image of camera">
+              <p>Kamera mit Objektiv / SD-Speicherkarte 32GB </p>
+              <button class="js-button" data-item="camera"  >+</button>
+
+
+          </li>
+
+          <li>
+            <h2> Logi Boxen</span> </h2>
+            <img class="image" src="./img/boxes.png" alt="image of boxes">
+            <p>Studio Aktivlautprecher-Set</p>
+            <!-- <button type="button" class="btn btn-secondary" name="button" > -->
+            <button class="js-button" data-item="boxen">
+              +
+            </button>
+          </li>
+
+          <li>
+            <h2> Stativ</h2>
+            <img class="image" src="./img/stativ.png" alt="image of stativ">
+            <p>Leichtes und robustes Aluminiumstativ</p>
+            <button class="js-button" data-item="stativ">
+              +
+            </button>
+          </li>
+
+          <li>
+            <h2>Acer Beamer</h2>
+            <img class="image" src="./img/beamer.png" alt="image of beamer">
+            <p>Full HD (1920x1080)</p>
+            <button class="js-button" data-item="beamer">
+              +
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="column column--right cart ">
+
+        <ul class="cart-items ">
+          <li class="is-hidden cart-item" id="camera">
+            <img class=" image_small" src="./img/camera.png" alt="image of camera">
+            <h3>Nikon D3100 </h3>
+          </li>
+
+          <li class="is-hidden cart-item" id="boxen">
+            <img class="image_small" src="./img/boxes.png" alt="image of boxes">
+            <h3> Logi Boxen </h3>
+          </li>
+
+          <li class="is-hidden cart-item" id="stativ">
+            <img class="image_small" src="./img/stativ.png" alt="image of stativ">
+            <h3> Stativ </h3>
+          </li>
+
+
+    <li class="is-hidden cart-item" id="beamer">
+            <img class="image_small" src="./img/beamer.png" alt="image of beamer">
+            <h3> Logi Boxen </h3>
+          </li>
+
+          <button type="button" class="js-button ">
+            Bestellung abschicken
+          </button>
+        </ul>
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
+<!-- 30em max-width text - repository settings pages
+poping up list  -->
