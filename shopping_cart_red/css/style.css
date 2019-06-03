@@ -1,0 +1,134 @@
+
+button {
+  margin: 4em 0;
+  padding: 1em 3em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 10px 40px;
+  border-radius:6px;
+  font-weight: 80;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 7em;
+  margin: 0.2em;
+  position: relative;
+
+
+}
+.container {
+  font-family: sans-serif;
+  /* background-color: black; */
+  /* display: inline-block; */
+  display: flex;
+  width: 100%;
+  height: 3000px;
+}
+
+.image {
+  width: 20%;
+  height: 20%;
+  margin-bottom: 20px;
+  margin-top: 2em;
+}
+
+.image_small {
+  width: 5%;
+  height: 5%;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: white;
+  flex-direction: row;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: yellow; */
+}
+
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.column {
+  flex: 1 1 34%;
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+  transition: flex-shrink 0.3s ease-in-out, flex-basis 0.5s ease-in-out, font-size 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.column--center {
+  opacity: 1;
+  background-color: rgb(48, 72, 100);
+    background: linear-gradient(105deg, #ffad2f 60%, #ffed4b 60%);
+}
+
+.column--right {
+  background-color: rgb(48, 72, 198);
+}
+
+.column.is-expanded {
+  flex-shrink: 0;
+  flex-basis: calc(100vw - 5em);
+
+}
+
+.column:not(.is-expanded) {
+  font-size: 0px;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  /* background-color: rgb(215, 43, 26); */
+
+
+}
+
+.column ul {
+  text-align: center;
+  /* width: 100%; */
+}
+
+.cart {
+  background-color: #000;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.cart-item {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.cart-items {
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.items {
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
